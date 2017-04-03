@@ -7,15 +7,12 @@ public class Main {
 		while(!st.isEmpty()){	
 			qu.enqueue(st.pop());
 		}
-		
 	}
 	public static void transferQueuetoStack(Queue qu, Stack st){
 		
-		while(!qu.isEmpty()){
-			
+		while(!qu.isEmpty()){		
 			st.push(qu.dequeue());
-		}
-		
+		}		
 	}
 	public static void transferStacktoStack(Stack st1, Stack st2, Queue qu){
 		
