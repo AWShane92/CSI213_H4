@@ -6,6 +6,7 @@ public class Node {
 	public String data;
 	public Node next;
 	
+	//Constructors
 	public Node(int id, String data){
 		
 		this.id = id;
@@ -27,6 +28,19 @@ public class Node {
 	
 	public void setData(String data){	
 		this.data = data;
+	}
+	
+	public void setNext(Node node){
+		this.next = node;
+	}
+	
+	public Node getNext(){	
+		return this.next;
+	}
+	//Methods
+	public String toSring(){
+		
+		return "This Node is: "+ this.id + " " + this.data;
 	}
 	
 }
