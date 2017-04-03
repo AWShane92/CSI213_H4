@@ -19,9 +19,8 @@ public class Stack {
 			return null;
 		}
 		
-		Node temp = this.top.next;
+		Node temp = this.top;
 		this.top = this.top.getNext();
-		this.top = temp;
 		
 		return temp;
 	}
