@@ -39,7 +39,7 @@ public class Node {
 	}
 	//Methods
 	public String toSring(){
-		
+		// Returns the String "This Node is (Node: ID) (Node: DATA).
 		return "This Node is: "+ this.id + " " + this.data;
 	}
 	

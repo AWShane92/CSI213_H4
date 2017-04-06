@@ -4,6 +4,7 @@ public class Stack {
 	
 	public Node top = null;
 	
+	//Adds node item to top of the stack. 
 	public void push(Node node){	
 		node.setNext(this.top);
 		this.top = node;	
@@ -12,7 +13,7 @@ public class Stack {
 	public Node peek(){
 		return this.top;
 	}
-	
+	//Removes top item from Stack. 
 	public Node pop(){
 		
 		if(this.isEmpty()){
@@ -24,7 +25,7 @@ public class Stack {
 		
 		return temp;
 	}
-	
+	//Iterates thru the list and prints in order. 
 	public void print(){
 		
 		if(this.isEmpty()){
@@ -39,12 +40,13 @@ public class Stack {
 			temp = temp.getNext();
 		}
 	}
-	
+	//Determines if the list is empty 
 	public boolean isEmpty(){
 		
 		return this.top==null;
 	}
 	
+	//Destroy Stack
 	public void destroy(){
 		
 		this.top = null;

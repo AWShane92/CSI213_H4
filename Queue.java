@@ -5,6 +5,7 @@ public class Queue extends Stack {
 		
 		public Node bottom = null;
 		
+		//Adds item to end of Queue. 
 		public void enqueue(Node newNode){
 			
 			if(this.isEmpty()){	
@@ -16,6 +17,7 @@ public class Queue extends Stack {
 			}
 			
 		}
+		//Removes item from beginning of Queue. 
 		public Node dequeue(){
 			
 			if(this.isEmpty()){
@@ -34,7 +36,7 @@ public class Queue extends Stack {
 			}
 						
 		}
-		
+		//Destroy Queue. 
 		public void destroy(){
 			this.top = null;
 			this.bottom = null;
