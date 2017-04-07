@@ -70,8 +70,7 @@ public class Main {
 		qu.destroy();
 		System.out.println("Destroy Queue print to show is empty");
 		qu.print();
-		System.out.println(" ");
-		
+		System.out.println(" ");	
 		System.out.println("Transfer stack to queue and print queue");
 		System.out.println("Print stack");
 		st.print();
@@ -83,9 +82,9 @@ public class Main {
 		//Shows the stack is empty. 
 		System.out.println("Print Stack to show is empty");
 		st.print();
-		System.out.println(" ");
-		
+		System.out.println(" ");		
 		System.out.println("Transfer queue to stack and print stack");
+		System.out.println("Print Queue");
 		qu.print();
 		System.out.println(" ");
 		transferQueuetoStack(qu,st,st2);
