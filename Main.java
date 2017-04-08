@@ -23,13 +23,15 @@ public class Main {
 		}
 	}
 	//Transfer from stack to stack
-	public static void transferStacktoStack(Stack st1, Stack st2, Stack st3){
+	public static void transferStacktoStack(Stack st1, Stack st2){
+		
+		Stack temp = new Stack();
 		//remove items from stack 1 to queue.
 		while(!st1.isEmpty()){	
-			st2.push(st1.pop());
+			temp.push(st1.pop());
 		}
-		while(!st2.isEmpty()){
-			st3.push(st2.pop());
+		while(!temp.isEmpty()){
+			st2.push(temp.pop());
 		}
 	}
 	
@@ -99,9 +101,9 @@ public class Main {
 		System.out.println("Print stack 1:");
 		st.print();
 		System.out.println(" ");
-		transferStacktoStack(st,st2,st3);
+		transferStacktoStack(st,st2);
 		System.out.println("Print stack 2:");
-		st3.print();
+		st2.print();
 		//Shows that stack 1 is empty. 
 		System.out.println(" ");
 		System.out.println("Print Stack 1 to show is empty");
